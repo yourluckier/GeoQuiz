@@ -3,6 +3,8 @@
     package="com.bignerdranch.android.geoquiz">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GeoActivity"></activity>
+        <activity android:name=".TestScanActivity"></activity>
+        <activity android:name=".TestGeneratectivity"></activity>
     </application>
 
 </manifest>

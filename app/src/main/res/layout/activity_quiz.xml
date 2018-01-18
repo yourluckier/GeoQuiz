@@ -43,4 +43,17 @@
         android:layout_height="wrap_content"
         android:text="Geo" />
 
+    <Button
+        android:id="@+id/qrscan_button"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:text="scan" />
+
+    <Button
+        android:id="@+id/qrgen_button"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:text="generate" />
+
+
 </LinearLayout>

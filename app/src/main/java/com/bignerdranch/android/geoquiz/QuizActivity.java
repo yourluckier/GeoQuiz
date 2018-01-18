@@ -16,6 +16,8 @@ public class QuizActivity extends AppCompatActivity {
     private Button mFalseButton;
     private Button mNextButton;
     private Button mGeoButton;
+    private Button mQRScanButton;
+    private Button mQRGenButton;
     private TextView mQuestionTextView;
 
     private Question[] mQuestionBank = new Question[] {
@@ -96,6 +98,26 @@ public class QuizActivity extends AppCompatActivity {
                 Intent i = new Intent(QuizActivity.this, GeoActivity.class);
                 startActivity(i);
 
+            }
+        });
+
+        mQRScanButton = (Button) findViewById(R.id.qrscan_button);
+        //mNextButton = (Button)findViewById(R.id.question_text_view);
+        mQRScanButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(QuizActivity.this, TestScanActivity.class);
+                startActivity(i);
+            }
+        });
+
+        mQRGenButton = (Button) findViewById(R.id.qrgen_button);
+        //mNextButton = (Button)findViewById(R.id.question_text_view);
+        mQRGenButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(QuizActivity.this, TestGeneratectivity.class);
+                startActivity(i);
             }
         });
 
